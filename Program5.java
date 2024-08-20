@@ -27,11 +27,25 @@ public class Program5 {
         double pipeFrameMPG = (double) pipeFrameMiles / pipeFrameGallons;
         double badwagonMPG = (double) badwagonMiles / badwagonGallons;
         
+        royaleMPG=((int)(royaleMPG*10+0.5));
+        royaleMPG= (royaleMPG/10); 
+        
+        koopaKingMPG=((int)(koopaKingMPG*10+0.5));
+        koopaKingMPG=(koopaKingMPG/10); 
+        
+        pipeFrameMPG=((int)(pipeFrameMPG*10+0.5));
+        pipeFrameMPG=(pipeFrameMPG/10); 
+        
+        badwagonMPG=((int)(badwagonMPG*10+0.5));
+        badwagonMPG=(badwagonMPG/10);
+        
+        
+        
         System.out.println("Mushroom Cup Prix Racer Average Miles/Per Gallon:");
-        System.out.println("Royale averaged " + Math.round(royaleMPG * 10) / 10.0 + " m/g");
-        System.out.println("Koopa King averaged " + Math.round(koopaKingMPG * 10) / 10.0 + " m/g");
-        System.out.println("Pipe Frame averaged " + Math.round(pipeFrameMPG * 10) / 10.0 + " m/g");
-        System.out.println("Badwagon averaged " + Math.round(badwagonMPG * 10) / 10.0 + " m/g");
+        System.out.println("Royale averaged " + royaleMPG + " m/g");
+        System.out.println("Koopa King averaged " + koopaKingMPG + " m/g");
+        System.out.println("Pipe Frame averaged " + pipeFrameMPG + " m/g");
+        System.out.println("Badwagon averaged " +  badwagonMPG + " m/g");
            
     }
 }
